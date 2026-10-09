@@ -1,0 +1,20 @@
+.image-server {
+  position: absolute;
+  text-align: right;  
+  image-rendering: pixelated;
+  left: 6cm;
+  top: 5cm;
+  scale: 7;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.right-total {
+  position: absolute;
+  left: 4.5cm;
+}
+
+.main-right {
+  position: absolute;
+  top: 4.5cm;
+}
