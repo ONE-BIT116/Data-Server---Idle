@@ -96,7 +96,7 @@ setInterval(() => {
 setInterval(() => {
   saveGame()
   updateUI();
-}, 60000);
+}, 30000);
 
 
 loadGame()
