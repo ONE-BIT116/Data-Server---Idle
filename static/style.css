@@ -1,3 +1,7 @@
+body {
+  background-color: #241f70;
+}
+
 .image-server {
   position: absolute;
   text-align: right;  
@@ -12,9 +16,111 @@
 .right-total {
   position: absolute;
   left: 4.5cm;
+  color:white;
+}
+
+.main-left {
+  position: absolute;
+  top: 4.5cm;
 }
 
 .main-right {
-  position: absolute;
-  top: 4.5cm;
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 25vw !important;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  background: #0a0a12;
+  border-left: 2px solid #00ffcc22;
+  overflow-y: auto;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.bulding-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.router {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #12121f;
+  border: 2px solid #00ffcc44;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7), 0 0 8px rgba(0, 255, 204, 0.1);
+  transition: border-color 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.router:hover {
+  border-color: #00ffcc;
+}
+
+.router img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.router-colvo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0 0 6px rgba(0, 255, 204, 0.5);
+}
+
+.ro-cost {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: #ffaa00;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 170, 0, 0.4);
+}
+
+.buy-btn {
+  background-color: #1a1a2e;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 8px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background-color: #00ffcc;
+  color: #1a1a2e;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+}
+
+.buy-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 4px rgba(0, 255, 204, 0.9);
+}
+
+.router-name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0 0 6px rgba(0, 255, 204, 0.5);
 }
