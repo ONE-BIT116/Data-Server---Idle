@@ -10,6 +10,7 @@ const totalElement = document.getElementById('total');
 const buybtn = document.getElementById('buy-button');
 const totalRouter = document.getElementById('colvo');
 const routerCostt = document.getElementById('router-cost');
+const PerSecondElement = document.getElementById('per-second');
 
 function formatBytes(bytes) {
   if (bytes < 1024) return bytes.toFixed(1) + "B";
@@ -24,6 +25,10 @@ function formatBytes(bytes) {
 function updateUI() {
   if (totalElement) {
     totalElement.textContent = formatBytes(byteCount);
+  }
+
+  if (PerSecondElement) {
+    PerSecondElement.textContent = formatBytes(bytesPerSecond)
   }
 }
 

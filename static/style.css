@@ -13,10 +13,20 @@ body {
   image-rendering: crisp-edges;
 }
 
-.right-total {
+.left-total {
+  font-family: 'Courier New', Courier, monospace;
   position: absolute;
-  left: 4.5cm;
+  left: 6.5cm;
   color:white;
+  margin: -3cm;
+}
+
+.left-persec {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: white;
+  bottom: -3cm;
+  left: 5cm;
 }
 
 .main-left {
