@@ -19,7 +19,7 @@ function formatBytes(bytes) {
   const i = Math.floor(Math.log(bytes) / Math.log(1024));
   const value = parseFloat((bytes / Math.pow(1024, i)).toFixed(1));
 
-  return value + " : " + units[i];
+  return value + units[i];
 }
 
 function updateUI() {
@@ -46,18 +46,25 @@ function saveGame() {
   localStorage.setItem('byteCount', byteCount);
   localStorage.setItem('bytesPerSecond', bytesPerSecond);
   localStorage.setItem('bytesPerClick', bytesPerClick);
+  localStorage.setItem('routerCost', routerCost);
+  localStorage.setItem('routerTotal', routerTotal);
 }
 
 function loadGame() {
   const savedByteCount = localStorage.getItem('byteCount');
   const savedBytesPerClick = localStorage.getItem('bytesPerClick');
   const savedBytesPerSecond = localStorage.getItem('bytesPerSecond');
+  const savedrouterCost = localStorage.getItem('routerCost');
+  const savedrouterTotal = localStorage.getItem('routerTotal');
 
   if (savedByteCount !== null) byteCount = parseFloat(savedByteCount);
   if (savedBytesPerClick !== null) bytesPerClick = parseFloat(savedBytesPerClick);
   if (savedBytesPerSecond !== null) bytesPerSecond = parseFloat(savedBytesPerSecond);
+  if (savedrouterCost !== null) routerCost = parseFloat(savedrouterCost);
+  if (savedrouterTotal !== null) routerTotal = parseFloat(savedrouterTotal);
 
   updateUI();
+  updateRouterUI();
 }
 
 if (clickk) {
